@@ -120,7 +120,7 @@ enum TransType {
 message Transaction {
     optional int32 version = 1;
     optional TransType type = 2;
-
+    optional uint64 nonce = 10;  //required since version 2
     extensions 100 to max;
 }
 
@@ -152,8 +152,6 @@ message TransferTrans {
     optional string from = 10;
     optional string to = 20;
     optional uint64 amount = 30;  //fantasysatoshi
-
-    optional uint64 nonce = 100;
 }
 
 message SignedTransaction {
