@@ -135,6 +135,15 @@ message NameTrans {
 
 }
 
+// Units 
+// 
+// Point            100 = Fantasypoint   =         100 Fantasybit 
+// Coin               1 = Fantasybitcoin =           1 Fantasybit 
+// Cent            0.01 = Fantasycent    =         100 Fantasybit 
+// Yard           0.001 = Fantasyyard    =       1,000 Fantasybit 
+// Hash        0.000001 = Fantasyhash    =   1,000,000 Fantasybit 
+// Satoshi   0.00000001 = Fantasysatoshi = 100,000,000 Fantasybit 
+
 message TransferTrans { 
     extend Transaction {
         optional TransferTrans transfer_tran = 400;
@@ -142,7 +151,7 @@ message TransferTrans {
 
     optional string from = 10;
     optional string to = 20;
-    optional uint64 amount = 30;
+    optional uint64 amount = 30;  //fantasysatoshi
 
     optional uint64 nonce = 100;
 }
