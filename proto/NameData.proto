@@ -10,7 +10,9 @@ message FantasyNameBal {
     optional uint64 chash = 50;
     optional int32 block = 60;
     optional int32 count = 70;
-
+    optional int32 stake16 = 80;
+    optional int32 thisweek = 90;
+    optional int32 lastweek = 100;
 }
 
 message FantasyBitAward {
