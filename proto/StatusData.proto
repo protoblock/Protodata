@@ -49,6 +49,7 @@ message GlobalState {
     enum State {
         OFFSEASON = 10;
         INSEASON = 30;
+        PLAYOFFS = 40;
     }
 
     optional State state =1;
